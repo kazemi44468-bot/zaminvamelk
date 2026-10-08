@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>سازه‌گستر ایرانیان | ساخت، عمران و مدیریت پروژه</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+*{
+box-sizing:border-box
+}
+
+body{
+
+margin:0;
+
+font-family:Vazirmatn,Tahoma,sans-serif;
+
+background:#07121f;
+
+color:#fff;
+
+}
+
+
+
+body:before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+z-index:-5;
+
+
+background:
+
+radial-gradient(circle at 25% 15%,
+rgba(212,175,55,.14),
+transparent 30%),
+
+
+radial-gradient(circle at 80% 80%,
+rgba(180,100,40,.12),
+transparent 35%),
+
+
+linear-gradient(
+180deg,
+#07121f,
+#101d29
+);
+
+
+}
+
+
+
+/* خطوط معماری */
+
+.architecture{
+
+position:fixed;
+
+inset:0;
+
+z-index:-3;
+
+
+background-image:
+
+linear-gradient(
+90deg,
+transparent 49%,
+rgba(212,175,55,.05) 50%,
+transparent 51%
+),
+
+
+linear-gradient(
+0deg,
+transparent 49%,
+rgba(212,175,55,.05) 50%,
+transparent 51%
+);
+
+
+background-size:70px 70px;
+
+
+opacity:.4;
+
+
+animation:
+
+archMove 70s linear infinite;
+
+}
+
+
+
+@keyframes archMove{
+
+from{
+
+transform:translate(0,0);
+
+}
+
+to{
+
+transform:translate(100px,100px);
+
+}
+
+}
+
+
+
+
+
+header{
+
+height:90px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:0 55px;
+
+
+background:
+
+rgba(255,255,255,.05);
+
+
+backdrop-filter:blur(15px);
+
+
+border-bottom:
+
+1px solid rgba(212,175,55,.15);
+
+}
+
+
+
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+.brand img{
+
+width:60px;
+
+}
+
+
+.brand span{
+
+color:#e5c36a;
+
+font-weight:700;
+
+}
+
+
+
+nav a{
+
+color:#ddd;
+
+text-decoration:none;
+
+margin:0 12px;
+
+font-size:14px;
+
+}
+
+
+
+nav a:hover{
+
+color:#d4af37;
+
+}
+
+
+
+
+
+.hero{
+
+max-width:1200px;
+
+margin:auto;
+
+
+padding:75px 40px 45px;
+
+
+display:flex;
+
+align-items:center;
+
+gap:50px;
+
+
+}
+
+
+
+.symbol{
+
+width:170px;
+
+height:170px;
+
+
+border-radius:50%;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+
+border:
+
+1px solid rgba(212,175,55,.6);
+
+
+color:#d4af37;
+
+
+font-size:22px;
+
+
+background:
+
+rgba(212,175,55,.05);
+
+}
+
+
+
+.hero h1{
+
+margin:0;
+
+font-size:44px;
+
+color:#e5c36a;
+
+}
+
+
+
+.hero h2{
+
+color:#d4af37;
+
+font-size:23px;
+
+font-weight:500;
+
+}
+
+
+
+.hero p{
+
+color:#ccd5df;
+
+line-height:2.2;
+
+}
+
+
+
+
+.container{
+
+max-width:1150px;
+
+margin:auto;
+
+
+padding:20px 40px 80px;
+
+}
+
+
+
+
+.box{
+
+background:
+
+rgba(255,255,255,.045);
+
+
+border:
+
+1px solid rgba(212,175,55,.14);
+
+
+border-radius:25px;
+
+
+padding:35px;
+
+
+margin-bottom:25px;
+
+
+backdrop-filter:blur(12px);
+
+
+}
+
+
+
+.box h3{
+
+font-size:26px;
+
+color:#e5c36a;
+
+}
+
+
+
+.box p,
+
+.box li{
+
+color:#d5dce6;
+
+line-height:2.2;
+
+}
+
+
+
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(220px,1fr));
+
+
+gap:20px;
+
+}
+
+
+
+
+
+.card{
+
+
+padding:25px;
+
+
+background:
+
+rgba(212,175,55,.05);
+
+
+border:
+
+1px solid rgba(212,175,55,.12);
+
+
+border-radius:18px;
+
+
+}
+
+
+
+.card h4{
+
+color:#d4af37;
+
+}
+
+
+
+footer{
+
+
+text-align:center;
+
+
+padding:30px;
+
+
+color:#999;
+
+
+border-top:
+
+1px solid rgba(212,175,55,.1);
+
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<div class="architecture"></div>
+
+
+
+
+
+<header>
+
+
+
+<div class="brand">
+
+<a href="../index.html">
+
+<img src="../logo.png">
+
+</a>
+
+
+<span>
+
+شرکت راهبردی زمین و ملک ایرانیان
+
+</span>
+
+
+</div>
+
+
+
+<nav>
+
+<a href="../index.html">خانه</a>
+
+<a href="../groups.html">گروه‌ها</a>
+
+<a href="../projects.html">پروژه‌ها</a>
+
+<a href="../contact.html">ارتباط</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<section class="hero">
+
+
+<div class="symbol">
+
+ساخت
+
+</div>
+
+
+
+
+<div>
+
+
+
+<h1>
+
+سازه‌گستر ایرانیان
+
+</h1>
+
+
+<h2>
+
+گروه ساخت، عمران و مدیریت پروژه
+
+</h2>
+
+
+<p>
+
+بازوی اجرایی هلدینگ در طراحی،
+ساخت، توسعه و مدیریت پروژه‌های
+عمرانی، ساختمانی و زیرساختی.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+معرفی سازه‌گستر ایرانیان
+
+</h3>
+
+
+<p>
+
+سازه‌گستر ایرانیان با هدف اجرای پروژه‌های
+با کیفیت، پایدار و ارزش‌آفرین فعالیت می‌کند.
+
+این مجموعه با بهره‌گیری از دانش مهندسی،
+مدیریت پروژه و فناوری‌های نوین ساخت،
+راهکارهای جامع توسعه عمرانی ارائه می‌دهد.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+ماموریت
+
+</h3>
+
+
+<ul>
+
+<li>
+مدیریت و اجرای پروژه‌های ساختمانی
+</li>
+
+
+<li>
+توسعه پروژه‌های عمرانی و زیرساختی
+</li>
+
+
+<li>
+ارتقای استانداردهای ساخت
+</li>
+
+
+<li>
+استفاده از فناوری‌های نوین ساختمانی
+</li>
+
+
+<li>
+کنترل هزینه، زمان و کیفیت پروژه
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+حوزه‌های تخصصی
+
+</h3>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<h4>
+
+ساختمان و مجتمع‌ها
+
+</h4>
+
+
+<p>
+
+طراحی و اجرای پروژه‌های مسکونی،
+تجاری و اداری.
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h4>
+
+زیرساخت و عمران
+
+</h4>
+
+
+<p>
+
+اجرای طرح‌های توسعه‌ای و عمرانی.
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h4>
+
+مدیریت پروژه
+
+</h4>
+
+
+<p>
+
+برنامه‌ریزی، کنترل و راهبری پروژه‌ها.
+
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h4>
+
+مهندسی ارزش
+
+</h4>
+
+
+<p>
+
+بهینه‌سازی طراحی و هزینه‌های ساخت.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+رویکرد ساخت پایدار
+
+</h3>
+
+
+<p>
+
+سازه‌گستر ایرانیان توسعه عمرانی را بر پایه
+کیفیت، دوام، بهره‌وری انرژی، حفظ محیط زیست
+و استفاده از فناوری‌های نوین دنبال می‌کند.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+مزیت رقابتی
+
+</h3>
+
+
+<p>
+
+ترکیب تجربه مهندسی، نگاه سرمایه‌گذاری،
+مدیریت حرفه‌ای پروژه و دسترسی به شبکه
+تخصصی هلدینگ، امکان اجرای پروژه‌های
+بزرگ‌مقیاس را فراهم می‌نماید.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+چشم‌انداز
+
+</h3>
+
+
+<p>
+
+تبدیل شدن به یکی از مجموعه‌های معتبر
+ساخت و توسعه پروژه‌های عمرانی در ایران
+با استانداردهای حرفه‌ای و بین‌المللی.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h3>
+
+همکاری
+
+</h3>
+
+
+<p>
+
+سازه‌گستر ایرانیان آماده همکاری با
+سرمایه‌گذاران، پیمانکاران، مشاوران،
+مهندسان و توسعه‌گران برای اجرای پروژه‌های
+ارزش‌آفرین است.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<footer>
+
+SAZEHGOSTAR IRANIAN
+
+<br>
+
+گروه ساخت، عمران و مدیریت پروژه
+
+</footer>
+
+
+
+
+</body>
+
+</html>
