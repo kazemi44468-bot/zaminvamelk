@@ -89,3 +89,23 @@ body:has(.contact-grid) .hero{position:relative;max-width:1080px;padding:58px 28
 body:has(.contact-grid) .hero h1{font-size:clamp(30px,4vw,44px)!important}
 body:has(.contact-grid) .section:has(.form){border-top:3px solid #d9b85f!important}
 @media(max-width:800px){.contact-grid{grid-template-columns:1fr!important}.contact-grid .info-box{padding:22px!important}}
+
+/* Final navigation and compact footer refinement */
+header.site-header{display:flex!important;justify-content:space-between!important;gap:12px!important;padding-inline:clamp(12px,2.2vw,30px)!important}
+.site-header nav{flex:1 1 auto;justify-content:center!important;align-items:center!important;gap:5px!important;width:auto!important;max-width:max-content;margin-inline:auto;padding:5px!important;border:1px solid rgba(217,184,95,.34);border-radius:12px;background:rgba(5,37,34,.24);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+.site-header nav a{padding:5px 10px!important;min-height:32px;border:1px solid rgba(217,184,95,.25)!important;border-radius:7px!important;background:rgba(255,255,255,.025);font-size:12px!important;line-height:1.5!important}
+.site-header nav a[aria-current=page]:after{display:none}
+.site-footer{margin-top:38px!important;padding:27px clamp(16px,3vw,38px) 16px!important}
+.footer-container{grid-template-columns:minmax(220px,1.3fr) repeat(3,minmax(130px,1fr))!important;gap:20px!important}
+.footer-brand{padding:16px!important;border-radius:14px!important}
+.footer-brand-head{gap:10px!important;margin-bottom:8px!important}
+.footer-logo{width:50px!important;height:50px!important}
+.footer-brand h3{font-size:14px!important;line-height:1.7!important}
+.footer-brand p{font-size:12px!important;line-height:1.9!important}
+.footer-column h4{font-size:13px!important;margin-bottom:12px!important;padding-bottom:8px!important}
+.footer-column a{font-size:12px!important;margin-bottom:7px!important;line-height:1.7!important}
+.footer-column p{font-size:11px!important;line-height:1.8!important;margin:3px 0!important}
+.footer-cta{padding:6px 10px!important;margin-top:7px!important;font-size:11px!important}
+.copyright{display:none!important}
+@media(max-width:950px){.site-header nav{width:auto!important;max-width:100%;margin:0 auto!important}.footer-container{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:650px){.site-header nav{display:none!important}.site-footer{margin-top:28px!important;padding:25px 15px 14px!important}.footer-container{grid-template-columns:1fr!important;gap:8px!important}.footer-brand{padding:14px!important}.footer-column{padding:7px 4px!important}.footer-column h4{margin-bottom:8px!important}.footer-column a{margin-bottom:5px!important}}
