@@ -114,3 +114,17 @@ footer:not(.foot) .foot-brand+*{margin-top:8px}
 .card:before,.box:before,.step:before,.panel-card:before,.content-card:before,.feature-card:before{content:"";position:absolute;top:0;right:0;width:48px;height:2px;background:linear-gradient(90deg,transparent,var(--site-gold));opacity:.8;pointer-events:none}
 @media(max-width:900px){.site-head .bar{width:92%;gap:10px}.site-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.site-head .bar{min-height:68px!important}.site-head .brand span{max-width:220px}.site-head .brand{font-size:11px!important}.site-footer-grid{grid-template-columns:1fr}.site-footer-grid>div{width:100%}.site-footer .foot-brand{width:fit-content}.site-footer .site-footer-bottom{align-items:flex-start;flex-direction:column}}
+
+/* Bring the original page-specific box families into the same visual language */
+.info-card,.value,.timeline-item,.counter,.feature,.why-card,.group-card,.project-item,.project-box,.info-box,.project-panel{position:relative;border:1px solid var(--site-line)!important;border-radius:16px 6px 16px 6px!important;background:linear-gradient(145deg,#fffefa,#fff)!important;box-shadow:0 10px 28px #1d3e2d0a,inset 0 1px #fff!important;transition:transform .25s,box-shadow .25s,border-color .25s}
+.info-card,.value,.timeline-item,.feature,.why-card,.group-card,.project-item,.project-box,.info-box{padding:clamp(17px,2.4vw,24px)!important}
+.info-card:before,.value:before,.timeline-item:before,.counter:before,.feature:before,.why-card:before,.group-card:before,.project-item:before,.project-box:before,.info-box:before{content:"";position:absolute;top:0;right:0;width:48px;height:2px;background:linear-gradient(90deg,transparent,var(--site-gold));pointer-events:none}
+.info-card:hover,.value:hover,.timeline-item:hover,.counter:hover,.feature:hover,.why-card:hover,.group-card:hover,.project-item:hover,.project-box:hover,.info-box:hover{transform:translateY(-3px);border-color:#c4a36a!important;box-shadow:0 15px 30px #1d3e2d12!important}
+.counter{padding:17px 12px!important;text-align:center}
+.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.counter-grid,.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.info-card h3,.value h3,.timeline-item h3,.feature h3,.why-card h3,.group-card h3,.project-item h3,.project-box h3,.info-box h3{color:var(--site-green)!important}
+.info-card p,.value p,.timeline-item p,.feature p,.why-card p,.group-card p,.project-item p,.project-box p,.info-box p{color:var(--site-muted);line-height:2.1}
+.placeholder{display:grid;place-items:center;min-height:58px;margin-bottom:10px;border:1px dashed #d5c29c;border-radius:12px 4px 12px 4px;background:linear-gradient(135deg,#f8f4e9,#fffefa);color:#8c744a;font-size:12px;font-weight:800;letter-spacing:1px}
+.project-image img,.project-box img,.group-card img,.info-card img{max-width:100%;height:auto;object-fit:contain}
+@media(max-width:760px){.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.counter-grid,.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:520px){.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.counter-grid,.contact-grid{grid-template-columns:1fr!important}}
