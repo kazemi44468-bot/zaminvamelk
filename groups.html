@@ -1,0 +1,1508 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>
+اکوسیستم گروه‌های تخصصی | شرکت راهبردی زمین و ملک ایرانیان
+</title>
+
+<meta name="description" content="
+معرفی گروه‌های تخصصی هلدینگ راهبردی زمین و ملک ایرانیان
+">
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+<style>
+
+
+:root{
+
+--gold:#d4af37;
+
+--gold2:#f0d46a;
+
+--dark:#071320;
+
+--text:#eef2f5;
+
+}
+
+
+
+*{
+
+box-sizing:border-box;
+
+}
+
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+
+
+body{
+
+margin:0;
+
+font-family:'Vazirmatn',Tahoma,sans-serif;
+
+direction:rtl;
+
+background:#071320;
+
+color:var(--text);
+
+overflow-x:hidden;
+
+}
+
+
+
+body:before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+z-index:-5;
+
+background:
+
+
+radial-gradient(circle at 20% 15%,
+
+rgba(212,175,55,.15),
+
+transparent 32%),
+
+
+radial-gradient(circle at 80% 80%,
+
+rgba(0,120,180,.12),
+
+transparent 30%),
+
+
+linear-gradient(
+
+180deg,
+
+#071320,
+
+#0c2033
+
+);
+
+}
+
+
+
+.bg-lines{
+
+position:fixed;
+
+inset:-40%;
+
+z-index:-3;
+
+
+background:
+
+repeating-radial-gradient(
+
+ellipse,
+
+transparent 0 70px,
+
+rgba(212,175,55,.035) 71px 72px
+
+);
+
+
+animation:bgmove 90s linear infinite;
+
+}
+
+
+
+@keyframes bgmove{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(10deg);
+
+}
+
+}
+
+
+
+
+
+/* Header */
+
+
+header{
+
+height:90px;
+
+padding:0 60px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+background:rgba(7,19,32,.78);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(212,175,55,.18);
+
+position:sticky;
+
+top:0;
+
+z-index:100;
+
+}
+
+
+
+.brand{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+
+.brand img{
+
+width:65px;
+
+}
+
+
+
+.brand-title{
+
+font-size:18px;
+
+font-weight:700;
+
+color:var(--gold);
+
+}
+
+
+
+.brand-sub{
+
+font-size:12px;
+
+color:#b8c2ce;
+
+}
+
+
+
+nav{
+
+display:flex;
+
+gap:22px;
+
+}
+
+
+
+nav a{
+
+color:#d8dee7;
+
+text-decoration:none;
+
+font-size:14px;
+
+transition:.3s;
+
+}
+
+
+
+nav a:hover{
+
+color:var(--gold);
+
+}
+
+
+
+
+
+/* Hero */
+
+
+.hero{
+
+max-width:1100px;
+
+margin:auto;
+
+text-align:center;
+
+padding:90px 20px 50px;
+
+}
+
+
+
+.hero h1{
+
+font-size:44px;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+}
+
+
+
+.hero h2{
+
+font-size:22px;
+
+font-weight:500;
+
+color:var(--gold2);
+
+}
+
+
+
+.hero p{
+
+margin:30px auto 0;
+
+max-width:850px;
+
+font-size:17px;
+
+line-height:2.4;
+
+color:#d3dce5;
+
+}
+
+
+
+
+
+/* Cards */
+
+
+.container{
+
+width:min(1300px,94%);
+
+margin:auto;
+
+padding:30px 0 80px;
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:rgba(255,255,255,.045);
+
+border:1px solid rgba(212,175,55,.15);
+
+border-radius:25px;
+
+padding:30px 25px;
+
+text-align:center;
+
+transition:.4s;
+
+backdrop-filter:blur(15px);
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:var(--gold);
+
+box-shadow:0 25px 55px rgba(0,0,0,.35);
+
+}
+
+
+
+.placeholder{
+
+width:90px;
+
+height:90px;
+
+margin:0 auto 20px;
+
+border-radius:50%;
+
+border:1px dashed rgba(212,175,55,.5);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:var(--gold);
+
+font-size:12px;
+
+}
+
+
+
+.card h2{
+
+font-size:20px;
+
+color:var(--gold2);
+
+margin:10px 0;
+
+}
+
+
+
+.en{
+
+font-family:Arial;
+
+font-size:13px;
+
+color:#999;
+
+margin-bottom:15px;
+
+}
+
+
+
+.card p{
+
+font-size:15px;
+
+line-height:2;
+
+color:#d4dce5;
+
+min-height:70px;
+
+}
+
+
+
+.card a{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:11px 30px;
+
+border-radius:30px;
+
+border:1px solid var(--gold);
+
+color:var(--gold);
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+
+
+.card a:hover{
+
+background:var(--gold);
+
+color:#111;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="bg-lines"></div>
+
+
+
+<header>
+
+
+<div class="brand">
+
+
+<a href="index.html">
+
+<img src="logo.png" alt="logo">
+
+</a>
+
+
+<div>
+
+<div class="brand-title">
+
+شرکت راهبردی زمین و ملک ایرانیان
+
+</div>
+
+
+<div class="brand-sub">
+
+Strategic Land & Property Iranian Holding
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<nav>
+
+<a href="index.html">
+خانه
+</a>
+
+<a href="about.html">
+درباره هلدینگ
+</a>
+
+<a href="groups.html">
+گروه‌ها
+</a>
+
+<a href="projects.html">
+پروژه‌ها
+</a>
+
+<a href="contact.html">
+ارتباط با ما
+</a>
+
+</nav>
+
+
+</header>
+
+
+
+
+
+<section class="hero">
+
+
+<h1>
+
+اکوسیستم گروه‌های تخصصی هلدینگ
+
+</h1>
+
+
+
+<h2>
+
+شبکه‌ای یکپارچه از تخصص، سرمایه، فناوری و توسعه
+
+</h2>
+
+
+
+<p>
+
+شرکت راهبردی زمین و ملک ایرانیان با ایجاد گروه‌های
+تخصصی و توسعه‌ای، ظرفیت‌های مختلف اقتصادی را در قالب
+یک ساختار هماهنگ مدیریت می‌کند تا زمینه اجرای پروژه‌های
+راهبردی، سرمایه‌گذاری پایدار و توسعه ارزش‌آفرین فراهم شود.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="container">
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+<img src="images/logos/land.png" alt="گروه زمین">
+</div>
+
+
+<h2>
+گروه توسعه زمین و املاک
+</h2>
+
+
+<div class="en">
+Land Development Group
+</div>
+
+
+<p>
+
+شناسایی، توسعه و ارزش‌آفرینی از ظرفیت‌های
+زمین، املاک، مستغلات و پروژه‌های ملکی.
+
+</p>
+
+
+<a href="groups/land.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه سرمایه‌گذاری
+</h2>
+
+
+<div class="en">
+Investment Group
+</div>
+
+
+<p>
+
+مدیریت سرمایه، مشارکت اقتصادی،
+تأمین مالی و توسعه فرصت‌های سرمایه‌گذاری.
+
+</p>
+
+
+<a href="groups/investment.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه شهرسازی و توسعه پایدار
+</h2>
+
+
+<div class="en">
+Urban Development Group
+</div>
+
+
+<p>
+
+توسعه شهری، شهرک‌سازی،
+برنامه‌ریزی فضایی و پروژه‌های توسعه منطقه‌ای.
+
+</p>
+
+
+<a href="groups/urban.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه عمران، ساخت و زیرساخت
+</h2>
+
+
+<div class="en">
+Construction & Infrastructure
+</div>
+
+
+<p>
+
+مدیریت و اجرای پروژه‌های عمرانی،
+ساختمانی، راه، پل و زیرساخت‌های توسعه‌ای.
+
+</p>
+
+
+<a href="groups/construction.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه معدن و صنایع معدنی
+</h2>
+
+
+<div class="en">
+Mining Group
+</div>
+
+
+<p>
+
+اکتشاف، استخراج، فرآوری،
+توسعه معادن، صنایع معدنی و تجارت مواد معدنی.
+
+</p>
+
+
+<a href="groups/mining.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه فناوری و هوشمندسازی
+</h2>
+
+
+<div class="en">
+Smart Technology Group
+</div>
+
+
+<p>
+
+هوش مصنوعی، تحلیل داده،
+GIS، سامانه‌های هوشمند و تحول دیجیتال.
+
+</p>
+
+
+<a href="groups/technology.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه بازرگانی و زنجیره تأمین
+</h2>
+
+
+<div class="en">
+Commerce & Supply Chain
+</div>
+
+
+<p>
+
+تجارت داخلی و خارجی،
+واردات، صادرات، تأمین کالا و توسعه بازار.
+
+</p>
+
+
+<a href="groups/commerce.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه کشاورزی و منابع طبیعی
+</h2>
+
+
+<div class="en">
+Agro Group
+</div>
+
+
+<p>
+
+توسعه اراضی مولد،
+کشاورزی نوین و مدیریت ظرفیت‌های طبیعی.
+
+</p>
+
+
+<a href="groups/agro.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه گردشگری و توسعه منطقه‌ای
+</h2>
+
+
+<div class="en">
+Tourism & Regional Development
+</div>
+
+
+<p>
+
+توسعه پروژه‌های گردشگری،
+اقامتی، بوم‌گردی و ظرفیت‌های منطقه‌ای.
+
+</p>
+
+
+<a href="groups/tourism.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه مدیریت دارایی
+</h2>
+
+
+<div class="en">
+Asset Management Group
+</div>
+
+
+<p>
+
+ارزیابی، مدیریت،
+بهینه‌سازی و افزایش ارزش دارایی‌ها.
+
+</p>
+
+
+<a href="groups/asset.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+<div class="placeholder">
+LOGO
+</div>
+
+
+<h2>
+گروه راهبرد و آینده‌پژوهی
+</h2>
+
+
+<div class="en">
+Strategy & Future Studies
+</div>
+
+
+<p>
+
+تحلیل محیط،
+برنامه‌ریزی راهبردی و طراحی مسیر توسعه آینده.
+
+</p>
+
+
+<a href="groups/strategy.html">
+مشاهده گروه
+</a>
+
+</div>
+
+
+
+
+
+</section>
+<!-- =====================================================
+Footer
+===================================================== -->
+
+
+<style>
+
+
+footer{
+
+width:100%;
+
+margin-top:40px;
+
+padding:70px 30px 25px;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+rgba(7,19,32,.85),
+
+#040b14
+
+);
+
+border-top:
+
+1px solid rgba(212,175,55,.18);
+
+}
+
+
+
+.footer-container{
+
+
+width:min(1250px,94%);
+
+margin:auto;
+
+
+display:grid;
+
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(240px,1fr));
+
+
+gap:35px;
+
+
+text-align:right;
+
+
+}
+
+
+
+.footer-column{
+
+
+padding:10px;
+
+
+}
+
+
+
+.footer-column h3{
+
+
+font-size:21px;
+
+color:var(--gold);
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.footer-column h4{
+
+
+font-size:18px;
+
+color:var(--gold2);
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.footer-column p{
+
+
+font-size:14px;
+
+line-height:2.2;
+
+color:#ccd5df;
+
+
+}
+
+
+
+.footer-column a{
+
+
+display:block;
+
+text-decoration:none;
+
+color:#cdd6df;
+
+font-size:14px;
+
+margin-bottom:12px;
+
+transition:.3s;
+
+
+}
+
+
+
+.footer-column a:hover{
+
+
+color:var(--gold);
+
+
+}
+
+
+
+.copyright{
+
+
+width:min(1250px,94%);
+
+margin:40px auto 0;
+
+
+padding-top:25px;
+
+
+border-top:
+
+1px solid rgba(255,255,255,.08);
+
+
+text-align:center;
+
+
+font-size:13px;
+
+
+line-height:2;
+
+
+color:#8995a3;
+
+
+}
+
+
+@media(max-width:900px){
+
+
+header{
+
+padding:0 20px;
+
+}
+
+
+nav{
+
+display:none;
+
+}
+
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+
+.footer-container{
+
+text-align:center;
+
+}
+
+
+.footer-column{
+
+text-align:center;
+
+}
+
+
+}
+
+
+
+</style>
+
+
+
+
+
+
+<footer>
+
+
+<div class="footer-container">
+
+
+
+<div class="footer-column">
+
+
+<h3>
+
+شرکت راهبردی زمین و ملک ایرانیان
+
+</h3>
+
+
+<p>
+
+هلدینگ توسعه‌ای با رویکرد راهبردی
+در حوزه زمین، املاک، سرمایه‌گذاری،
+فناوری، معدن و توسعه پایدار.
+
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="footer-column">
+
+
+<h4>
+
+دسترسی سریع
+
+</h4>
+
+
+<a href="index.html">
+
+خانه
+
+</a>
+
+
+<a href="about.html">
+
+درباره هلدینگ
+
+</a>
+
+
+<a href="groups.html">
+
+گروه‌های تخصصی
+
+</a>
+
+
+<a href="projects.html">
+
+پروژه‌ها
+
+</a>
+
+
+<a href="contact.html">
+
+ارتباط با ما
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+<div class="footer-column">
+
+
+<h4>
+
+گروه‌های تخصصی
+
+</h4>
+
+
+<a href="groups/land.html">
+
+توسعه زمین و املاک
+
+</a>
+
+
+<a href="groups/investment.html">
+
+سرمایه‌گذاری
+
+</a>
+
+
+<a href="groups/mining.html">
+
+معدن و صنایع معدنی
+
+</a>
+
+
+<a href="groups/technology.html">
+
+فناوری و هوشمندسازی
+
+</a>
+
+
+<a href="groups/commerce.html">
+
+بازرگانی و زنجیره تأمین
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="footer-column">
+
+
+<h4>
+
+اطلاعات ثبتی
+
+</h4>
+
+
+<p>
+
+شماره ثبت: ۶۷۴۱۴۴
+
+</p>
+
+
+<p>
+
+شناسه ملی: ۱۴۰۱۵۳۹۰۲۰۲
+
+</p>
+
+
+<p>
+
+شرکت با مسئولیت محدود
+
+</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="copyright">
+
+
+شرکت راهبردی زمین و ملک ایرانیان
+
+
+<br>
+
+
+Strategic Land & Property Iranian Holding
+
+
+<br><br>
+
+
+© کلیه حقوق مادی و معنوی محفوظ است
+
+
+</div>
+
+
+
+</footer>
+
+
+
+
+
+
+<script>
+
+
+const cards=document.querySelectorAll(".card");
+
+
+const observer=new IntersectionObserver(
+
+(entries)=>{
+
+
+entries.forEach(entry=>{
+
+
+if(entry.isIntersecting){
+
+
+entry.target.style.opacity="1";
+
+
+entry.target.style.transform="translateY(0)";
+
+
+}
+
+
+});
+
+
+},
+
+{
+
+threshold:.15
+
+}
+
+);
+
+
+
+
+cards.forEach(card=>{
+
+
+card.style.opacity="0";
+
+
+card.style.transform="translateY(40px)";
+
+
+card.style.transition="all .7s ease";
+
+
+observer.observe(card);
+
+
+});
+
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
