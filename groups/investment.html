@@ -211,7 +211,7 @@ box-shadow:
 
 .hero h1{
 
-font-size:44px;
+font-size:30px;
 margin:0;
 
 color:#e5c36a;
@@ -359,7 +359,39 @@ color:#999;
 }
 
 
-header{position:sticky;top:0;z-index:20;min-height:80px;height:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px max(4%,calc((100% - 1160px)/2));background:linear-gradient(110deg,#12392f,#1b4a3c);border-bottom:3px solid #b99a61;box-shadow:0 5px 18px #132e2415}header .brand,header .brand span{color:#fff}header .brand img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:50%;padding:3px}header nav{display:flex;align-items:center;gap:5px}header nav a{color:#edf3ed;text-decoration:none;margin:0;padding:9px 12px;border-radius:8px;font-size:13px;white-space:nowrap;transition:background .2s,color .2s}header nav a:hover{background:#ffffff17;color:#f1d7a4}@media(max-width:850px){header{flex-wrap:wrap;padding:12px 4%}header nav{width:100%;display:flex;flex-wrap:wrap;gap:4px}header nav a{padding:7px 9px;font-size:12px}}@media(max-width:560px){header{align-items:flex-start}header .brand img{width:40px;height:40px}header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}header nav a{background:#ffffff0c}}</style>
+header{position:sticky;top:0;z-index:20;min-height:80px;height:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px max(4%,calc((100% - 1160px)/2));background:linear-gradient(110deg,#12392f,#1b4a3c);border-bottom:3px solid #b99a61;box-shadow:0 5px 18px #132e2415}header .brand,header .brand span{color:#fff}header .brand img{width:48px;height:48px;object-fit:contain;background:#fff;border-radius:50%;padding:3px}header nav{display:flex;align-items:center;gap:5px}header nav a{color:#edf3ed;text-decoration:none;margin:0;padding:9px 12px;border-radius:8px;font-size:13px;white-space:nowrap;transition:background .2s,color .2s}header nav a:hover{background:#ffffff17;color:#f1d7a4}@media(max-width:850px){header{flex-wrap:wrap;padding:12px 4%}header nav{width:100%;display:flex;flex-wrap:wrap;gap:4px}header nav a{padding:7px 9px;font-size:12px}}@media(max-width:560px){header{align-items:flex-start}header .brand img{width:40px;height:40px}header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}header nav a{background:#ffffff0c}}
+/* Shared refined header, logo, footer and return-to-top control */
+.head,header{position:sticky;top:0;z-index:30;isolation:isolate}
+.head{background:linear-gradient(110deg,#12392f,#1b4a3c)!important;border-bottom:2px solid #b99a61!important;box-shadow:0 7px 24px #102d231c!important}
+header{background:linear-gradient(110deg,#12392f,#1b4a3c)!important;border-bottom:2px solid #b99a61!important;box-shadow:0 7px 24px #102d231c!important}
+.bar{min-height:88px!important;gap:20px!important}
+.brand{position:relative;isolation:isolate;color:#fff!important;gap:12px!important;font-size:14px!important;line-height:1.7!important}
+.brand:before{content:"";position:absolute;right:-5px;top:50%;width:67px;height:67px;border:1px solid #c4a36a70;border-radius:18px 5px 18px 5px;transform:translateY(-50%) rotate(8deg);z-index:-1;pointer-events:none}
+.brand:after{content:"";position:absolute;right:1px;top:50%;width:58px;height:58px;border:1px solid #c4a36a38;border-radius:5px 15px 5px 15px;transform:translateY(-50%) rotate(-7deg);z-index:-1;pointer-events:none}
+.brand img{position:relative;width:62px!important;height:62px!important;max-width:62px;object-fit:contain;background:transparent!important;border-radius:0!important;padding:0!important;filter:drop-shadow(0 4px 9px #0002)}
+.brand small{color:#d9c69b!important;font-size:9px!important;letter-spacing:1px}
+.head nav,#nav,header nav{position:relative;isolation:isolate;display:flex;align-items:center;gap:4px;padding:5px!important;border:1px solid #c4a36a66;border-radius:13px 5px 13px 5px;background:linear-gradient(135deg,#ffffff10,#ffffff04),repeating-linear-gradient(135deg,transparent 0 12px,#ffffff07 12px 13px)!important;box-shadow:inset 0 1px #ffffff10,0 4px 12px #071a1315}
+.head nav a,#nav a,header nav a{position:relative;color:#edf3ed!important;text-decoration:none;border-radius:7px;padding:8px 10px!important;font-size:13px!important;white-space:nowrap;transition:background .2s,color .2s,transform .2s}
+.head nav a:hover,#nav a:hover,header nav a:hover,.head nav a[aria-current=page],#nav a[aria-current=page]{background:#ffffff17!important;color:#f1d7a4!important}
+.head nav a[aria-current=page]:after,#nav a[aria-current=page]:after{content:"";position:absolute;bottom:2px;right:12px;left:12px;height:2px;border-radius:2px;background:#d3b77c}
+.toggle{color:#fff!important;border-color:#ffffff50!important;background:#ffffff0d!important}
+.foot,.foot footer,footer{position:relative}
+.foot{background:linear-gradient(125deg,#10362d,#174438)!important;border-top:2px solid #b99a61!important}
+.footgrid{align-items:start}
+.foot-brand{display:flex;align-items:center;gap:12px;width:fit-content;max-width:100%;margin:0 0 15px;text-decoration:none!important;color:#f3e6c7!important;font-size:14px!important;font-weight:800;line-height:1.8;border:1px solid #c4a36a58;border-radius:13px 5px 13px 5px;padding:8px 13px 8px 16px;background:linear-gradient(120deg,#ffffff0b,#ffffff02);transition:transform .2s,border-color .2s,background .2s}
+.foot-brand:hover{transform:translateY(-2px);border-color:#d8b979;background:#ffffff10}
+.foot-brand img{width:55px;height:55px;object-fit:contain;background:transparent!important;border-radius:0!important;padding:0!important;filter:drop-shadow(0 3px 8px #0002)}
+.foot-brand span{display:block}
+.foot-brand small{display:block;color:#d8c69e;font:600 9px/1.7 Arial,sans-serif;letter-spacing:1px;direction:ltr;text-align:right}
+.back-top{position:fixed;z-index:80;left:22px;bottom:22px;width:47px;height:47px;display:grid;place-items:center;border:1px solid #d7bd86;border-radius:15px 5px 15px 5px;background:linear-gradient(145deg,#245747,#12392f);color:#f4dfb3;box-shadow:0 8px 24px #102c2240;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .25s,transform .25s,visibility .25s,background .2s}
+.back-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+.back-top:hover{background:linear-gradient(145deg,#326c56,#1a4a3b);transform:translateY(-3px)}
+.back-top svg{width:21px;height:21px;display:block}
+.back-top:focus-visible{outline:3px solid #d7bd86;outline-offset:3px}
+@media(max-width:900px){.bar{min-height:76px!important}.brand img{width:54px!important;height:54px!important;max-width:54px}.brand:before{width:59px;height:59px}.brand:after{width:51px;height:51px}.head nav,#nav,header nav{display:none!important;position:absolute!important;top:calc(100% + 7px)!important;left:4%!important;right:4%!important;width:auto!important;align-items:stretch!important;flex-direction:column!important;gap:2px!important;padding:9px!important;background:#153e33!important;border:1px solid #c4a36a88!important;box-shadow:0 15px 30px #102d2340!important}.head nav.open,#nav.open,header nav.open{display:flex!important}.head nav a,#nav a,header nav a{color:#f0f4ed!important;padding:10px 12px!important}.head nav a[aria-current=page]:after,#nav a[aria-current=page]:after{right:auto;left:12px;bottom:9px;width:3px;height:18px}.toggle{display:block!important}}
+@media(max-width:560px){.bar{min-height:70px!important}.brand{font-size:11px!important;gap:8px!important}.brand img{width:47px!important;height:47px!important;max-width:47px}.brand:before{width:51px;height:51px;right:-3px}.brand:after{width:44px;height:44px;right:1px}.brand small{font-size:8px!important}.back-top{left:13px;bottom:13px;width:43px;height:43px}.foot-brand img{width:49px;height:49px}}
+@media(prefers-reduced-motion:reduce){.back-top,.foot-brand,*{scroll-behavior:auto!important;transition:none!important}}
+</style>
 
 </head>
 
@@ -394,7 +426,7 @@ header{position:sticky;top:0;z-index:20;min-height:80px;height:auto;display:flex
 
 <a href="../home.html">خانه</a>
 
-<a href="../groups.html">گروه‌های تخصصی</a>
+<a href="../groups.html">گروه‌های تخصصیی تخصصی</a>
 
 <a href="../projects.html">طرح‌ها و فرصت‌ها</a>
 
@@ -704,7 +736,7 @@ header{position:sticky;top:0;z-index:20;min-height:80px;height:auto;display:flex
 
 
 
-<footer>
+<footer><div class="footer-brand-wrap"><a class="foot-brand" href="../index.html" aria-label="بازگشت به درگاه شرکت راهبردی زمین و ملک ایرانیان"><img src="../logo.png" alt="نشان شرکت"><span>شرکت راهبردی زمین و ملک ایرانیان<small>STRATEGIC LAND &amp; PROPERTY</small></span></a></div>
 
 SARMAYEGOSTAR IRANIAN
 
@@ -716,6 +748,6 @@ SARMAYEGOSTAR IRANIAN
 
 
 
-</body>
+<button class="back-top" id="back-top" type="button" aria-label="بازگشت به بالای صفحه" title="بازگشت به بالا"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button><script>(()=>{const b=document.getElementById('back-top');if(!b)return;const sync=()=>b.classList.toggle('visible',window.scrollY>260);window.addEventListener('scroll',sync,{passive:true});sync();b.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));const t=document.querySelector('.toggle'),n=document.querySelector('#nav');if(t&&n)t.addEventListener('click',()=>{const open=n.classList.toggle('open');t.setAttribute('aria-expanded',String(open))})})();</script></body>
 
 </html>
