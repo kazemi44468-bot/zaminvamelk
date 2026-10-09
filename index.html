@@ -29,6 +29,29 @@ h1{font-size:clamp(25px,4vw,39px);line-height:1.8;color:var(--forest);margin:14p
 .caption{font-size:12px;color:#68786f;margin:12px 0 0}
 @media(max-width:520px){main{padding:16px 12px}.panel{padding:28px 19px;border-radius:18px}.desc{font-size:14px}.enter{width:100%}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* Entrance motion and refined ornamental identity */
+@keyframes introReveal{from{opacity:0;transform:translateY(24px) scale(.985);filter:blur(5px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes emblemFloat{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-8px) rotate(1deg)}}
+@keyframes orbitTurn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes shimmerLine{0%,100%{opacity:.55;transform:scaleX(.7)}50%{opacity:1;transform:scaleX(1)}}
+@keyframes ambientDrift{0%,100%{transform:translate3d(0,0,0) rotate(0)}50%{transform:translate3d(12px,-10px,0) rotate(5deg)}}
+.backdrop{overflow:hidden;background:radial-gradient(ellipse at 18% 10%,#dfe8d9 0,transparent 38%),radial-gradient(ellipse at 85% 90%,#e8deca 0,transparent 34%),linear-gradient(145deg,#f8f6ef,#e8eee5)}
+.backdrop:before{animation:ambientDrift 18s ease-in-out infinite}
+.backdrop:after{animation:ambientDrift 22s ease-in-out infinite reverse}
+.panel{position:relative;isolation:isolate;overflow:hidden;animation:introReveal .9s cubic-bezier(.2,.7,.2,1) both;box-shadow:0 28px 90px #183e3519, inset 0 1px #fff}
+.panel:before{content:"";position:absolute;inset:12px;border:1px solid #c4a36a5c;border-radius:17px;pointer-events:none;z-index:-1}
+.panel:after{content:"";position:absolute;width:260px;height:260px;top:-145px;left:-115px;border:1px solid #c4a36a75;border-radius:50%;box-shadow:0 0 0 15px #c4a36a0b,0 0 0 32px #c4a36a08;pointer-events:none;animation:orbitTurn 60s linear infinite;z-index:-1}
+.logo{animation:emblemFloat 5.5s ease-in-out infinite;filter:drop-shadow(0 12px 18px #183e3525)}
+.rule{position:relative;animation:shimmerLine 3.5s ease-in-out infinite}
+.eng{letter-spacing:2px}
+.motto{text-shadow:0 1px #fff8}
+.enter{position:relative;overflow:hidden;box-shadow:0 10px 24px #163e3526, inset 0 1px #ffffff20}
+.enter:before{content:"";position:absolute;top:-60%;left:-45%;width:35%;height:220%;background:linear-gradient(90deg,transparent,#ffffff35,transparent);transform:rotate(22deg);transition:left .7s ease}
+.enter:hover:before{left:120%}
+.enter:focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+@media(max-width:520px){.panel:before{inset:7px}.panel:after{width:190px;height:190px;top:-110px;left:-100px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
 </style></head>
 <body><div class="backdrop" aria-hidden="true"></div>
 <main><section class="panel" aria-labelledby="company-title">
