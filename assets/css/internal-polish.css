@@ -8,7 +8,7 @@ header{position:sticky!important;top:0;z-index:1000;min-height:88px;height:auto!
 header:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.48;background:repeating-linear-gradient(132deg,transparent 0 31px,rgba(216,183,94,.09) 32px,transparent 33px 64px),linear-gradient(90deg,transparent,rgba(135,207,190,.08),transparent)}
 header:after{content:"";position:absolute;left:clamp(16px,4vw,54px);right:clamp(16px,4vw,54px);bottom:-2px;height:3px;background:linear-gradient(90deg,transparent,rgba(216,183,94,.18) 10%,#d8b75e 50%,rgba(142,208,196,.65) 80%,transparent);filter:drop-shadow(0 0 7px rgba(216,183,94,.42));pointer-events:none}
 header .brand,header .logo{display:flex!important;align-items:center;gap:12px;min-width:0;text-decoration:none!important;color:var(--gold2)!important}
-header .brand>a{display:flex;align-items:center;flex-shrink:0}header .brand>a,header .logo{color:inherit}
+header .brand>a{display:flex;align-items:center;flex-shrink:0}header .brand>a{display:flex;align-items:center;flex-shrink:0}header .brand>a,header .logo{color:inherit}
 header .brand img,header .logo img{width:58px!important;height:58px!important;max-width:16vw;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 0 9px rgba(216,183,94,.22))}
 header .brand-title,header .logo h2,header .brand h2,header .brand>span{font-size:clamp(14px,1.35vw,19px)!important;font-weight:800!important;color:var(--gold2)!important;margin:0!important;line-height:1.7}
 header .brand-sub,header .logo span,header .brand span{display:block;font-size:11px!important;line-height:1.6;color:#c0d9d4!important;letter-spacing:.25px}
