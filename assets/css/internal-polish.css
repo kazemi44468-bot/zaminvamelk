@@ -78,3 +78,14 @@ button,.btn,.card a{transition:all .22s ease}
 .mobile-bottom-nav .mobile-nav-logo{width:27px;height:27px;object-fit:contain;filter:drop-shadow(0 0 4px rgba(217,184,95,.28))}
 .footer-container{grid-template-columns:1fr;gap:13px!important}.footer-brand{padding:18px}.footer-column{padding:8px 4px;border-bottom:1px solid rgba(205,232,223,.12)}.site-footer{margin-top:45px;padding:38px 18px 18px!important}.copyright{margin-top:18px!important}.back-to-top{right:12px;bottom:88px;width:42px;height:42px;border-radius:12px}.form{grid-template-columns:1fr!important;padding:18px!important}.form textarea,.form button{grid-column:1}.contact-layout{grid-template-columns:1fr}.section{padding:24px 17px!important}.hero h1{font-size:clamp(26px,7vw,36px)!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* Contact page refinements */
+.contact-grid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px!important}
+.contact-grid .info-box{position:relative;overflow:hidden;background:linear-gradient(145deg,#286b61,#1b514b)!important;border:1px solid rgba(241,211,130,.58)!important;border-radius:17px!important;padding:26px!important;box-shadow:0 12px 26px rgba(3,29,27,.2),inset 0 1px 0 rgba(255,255,255,.09)!important}
+.contact-grid .info-box:before{content:"";position:absolute;top:0;right:0;width:70px;height:3px;background:linear-gradient(90deg,transparent,#f0d17b);box-shadow:0 0 12px rgba(240,209,123,.25)}
+.contact-grid .info-box h3{color:#f7dfa0!important;font-size:18px!important;margin:0 0 14px!important}
+.contact-grid .info-box p{color:#edf7f3!important;font-size:14px!important;line-height:2.2!important}
+body:has(.contact-grid) .hero{position:relative;max-width:1080px;padding:58px 28px 42px!important;margin-bottom:24px;background:radial-gradient(ellipse at 50% 0,rgba(216,184,95,.12),transparent 65%)}
+body:has(.contact-grid) .hero h1{font-size:clamp(30px,4vw,44px)!important}
+body:has(.contact-grid) .section:has(.form){border-top:3px solid #d9b85f!important}
+@media(max-width:800px){.contact-grid{grid-template-columns:1fr!important}.contact-grid .info-box{padding:22px!important}}
