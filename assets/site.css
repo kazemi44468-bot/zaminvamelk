@@ -82,3 +82,7 @@ footer:not(.foot) .foot-brand+*{margin-top:8px}
 .portal-pill strong{font-size:14px;color:#163e35;line-height:1.7}
 .portal-pill small{font-size:11px;color:#68766d;line-height:1.8}
 @media(max-width:620px){.portal-pill-grid{grid-template-columns:1fr;gap:8px;margin-top:19px}.portal-pill{padding:11px 13px}.portal-pill small{font-size:10px}}
+
+/* Shared return-to-top state for pages with or without legacy controls */
+.back-top{opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .25s,transform .25s,visibility .25s}
+.back-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
