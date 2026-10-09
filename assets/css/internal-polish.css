@@ -177,3 +177,17 @@ body{padding-bottom:78px!important}
 .form textarea,.form button{grid-column:1}
 .site-header .brand-title{font-size:12px!important}
 }
+
+/* Explicit mobile grid rules for the site's real content components */
+@media(max-width:650px){
+.counter-grid,.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.contact-grid,.city-grid,.cards,.grid,.project-grid,.projects-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+.feature-grid>.feature,.group-grid>.group-card,.why-grid>.why-card,.info-grid>.info-card,.value-grid>*,.counter-grid>.counter,.cards>.card,.grid>.card,.city-grid>*{min-width:0!important;width:auto!important;max-width:100%!important}
+.info-card,.feature,.group-card,.why-card,.counter,.project-info,.project-item,.card{padding:14px!important}
+.counter{min-height:0!important}
+.project-item{min-width:0!important}
+.project-item img,.project-image img,.card img,.group-card img{max-width:100%;height:auto;object-fit:cover}
+}
+@media(max-width:380px){
+.counter-grid,.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.city-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+.counter,.feature,.group-card,.why-card,.info-card{padding:10px!important}
+}
