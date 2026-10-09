@@ -25,7 +25,7 @@ font-family:Vazirmatn,Tahoma,sans-serif
 }
 
 body{
-background:#07111f;
+background:#092c23;
 color:#fff;
 position:relative
 }
@@ -44,9 +44,10 @@ content:"";
 position:absolute;
 inset:-10%;
 background:
-radial-gradient(circle at 50% 42%,rgba(214,180,92,.09),transparent 28%),
-radial-gradient(circle at 85% 20%,rgba(30,90,130,.16),transparent 35%),
-linear-gradient(180deg,#07111f,#0d2234);
+radial-gradient(ellipse at 50% 42%,rgba(214,180,92,.075),transparent 30%),
+radial-gradient(ellipse at 14% 18%,rgba(49,112,79,.24),transparent 38%),
+radial-gradient(ellipse at 88% 78%,rgba(21,83,61,.30),transparent 42%),
+linear-gradient(145deg,#092c23 0%,#0b3529 48%,#071f1a 100%);
 animation:bgPulse 20s infinite alternate
 }
 
@@ -60,9 +61,9 @@ to{transform:scale(1.04)}
 position:absolute;
 inset:-200px;
 background:
-linear-gradient(25deg,transparent 45%,rgba(214,180,92,.035) 46%,transparent 47%),
+linear-gradient(25deg,transparent 45%,rgba(214,180,92,.045) 46%,transparent 47%),
 linear-gradient(-25deg,transparent 45%,rgba(214,180,92,.035) 46%,transparent 47%),
-linear-gradient(90deg,transparent 48%,rgba(214,180,92,.025) 49%,transparent 50%);
+linear-gradient(90deg,transparent 48%,rgba(214,180,92,.035) 49%,transparent 50%);
 background-size:170px 130px,220px 170px,150px 150px;
 animation:mapMove 70s linear infinite
 }
@@ -89,7 +90,7 @@ to{transform:scale(1.15) rotate(8deg)}
 .nodes{
 position:absolute;
 inset:0;
-background-image:radial-gradient(circle,rgba(214,180,92,.6) 1px,transparent 2px);
+background-image:radial-gradient(circle,rgba(214,180,92,.48) 1px,transparent 2px);
 background-size:100px 100px;
 opacity:.06;
 animation:nodesMove 35s linear infinite
@@ -105,7 +106,7 @@ to{transform:translate(-100px,-100px)}
 position:absolute;
 width:520px;
 height:520px;
-border:1px solid rgba(214,180,92,.06);
+border:1px solid rgba(214,180,92,.075);
 transform:rotate(45deg)
 }
 
@@ -185,7 +186,7 @@ margin-top:8px;
 font-family:Arial,sans-serif;
 font-size:17px;
 letter-spacing:1.5px;
-color:#aaa;
+color:#c3d4ca;
 max-width:95vw
 }
 
@@ -231,8 +232,8 @@ max-width:90vw
 
 .btn:hover{
 background:#d6b45c;
-color:#07111d;
-box-shadow:0 0 45px rgba(214,180,92,.45)
+color:#092c23;
+box-shadow:0 0 45px rgba(214,180,92,.32),0 0 70px rgba(32,105,72,.18)
 }
 
 
