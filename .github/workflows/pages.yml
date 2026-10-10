@@ -22,6 +22,35 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Download and store licensed site photography
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/images
+          curl -fL --retry 3 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=2000&q=84&fm=jpg' -o assets/images/hero-landscape.jpg
+          curl -fL --retry 3 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=82&fm=jpg' -o assets/images/project-green-campus.jpg
+          curl -fL --retry 3 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=82&fm=jpg' -o assets/images/project-land-parcels.jpg
+          curl -fL --retry 3 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=82&fm=jpg' -o assets/images/project-urban-renewal.jpg
+          curl -fL --retry 3 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=82&fm=jpg' -o assets/images/project-digital-assets.jpg
+          curl -fL --retry 3 'https://images.unsplash.com/photo-1449158743715-0a90ebb6d2d8?auto=format&fit=crop&w=1800&q=80&fm=jpg' -o assets/images/footer-architecture.jpg
+          cat > assets/images/PHOTO-CREDITS.md <<'EOF'
+          # Credits for photographic assets
+          The photographs in this directory are downloaded from Unsplash image CDN and are used under the Unsplash License: https://unsplash.com/license
+          - hero-landscape.jpg — https://unsplash.com/photos/photo-1500382017468-9049fed747ef
+          - project-green-campus.jpg — https://unsplash.com/photos/photo-1600585154340-be6161a56a0c
+          - project-land-parcels.jpg — https://unsplash.com/photos/photo-1500530855697-b586d89ba3ee
+          - project-urban-renewal.jpg — https://unsplash.com/photos/photo-1486406146926-c627a92ad1ab
+          - project-digital-assets.jpg — https://unsplash.com/photos/photo-1511818966892-d7d671e672a2
+          - footer-architecture.jpg — https://unsplash.com/photos/photo-1449158743715-0a90ebb6d2d8
+          These assets are copied into the repository so the published website serves images from its own GitHub Pages origin.
+          EOF
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/images/*.jpg assets/images/PHOTO-CREDITS.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add locally stored licensed property photography'
+            git push
+          fi
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
