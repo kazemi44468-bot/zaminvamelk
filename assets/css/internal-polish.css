@@ -235,3 +235,7 @@ body:after{content:"";position:fixed;inset:0;z-index:-4;pointer-events:none;opac
  .framework-grid,.framework-flow{grid-template-columns:1fr!important}
  .counter-grid,.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.city-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
+
+/* Prevent legacy fixed/minimum heights from creating empty card space */
+.section,.box,.card,.feature,.group-card,.why-card,.counter,.info-box,.contact-card,.form-card,.contact-detail,.project-item,.project-card,.framework-section,.framework-card,.framework-step{min-height:0!important}
+.counter-grid,.feature-grid,.group-grid,.why-grid,.info-grid,.value-grid,.city-grid,.cards,.grid,.project-grid,.projects-grid,.contact-grid,.framework-grid,.framework-flow{align-items:stretch}
