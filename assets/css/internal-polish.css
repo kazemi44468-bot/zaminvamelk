@@ -76,8 +76,7 @@ body:has(.contact-grid) .hero h1{font-size: clamp(30px,4vw,30px)!important}
 body:has(.contact-grid) .section:has(.form){border-top:3px solid #d9b85f!important}
 @media(max-width:800px){.contact-grid{grid-template-columns:1fr!important}.contact-grid .info-box{padding:22px!important}}
 
-/* Final navigation and compact footer refinement */
-header.site-header{display:flex!important;justify-content:space-between!important;gap:12px!important;padding-inline:clamp(12px,2.2vw,30px)!important}
+
 .site-footer{margin-top:38px!important;padding:27px clamp(16px,3vw,30px) 16px!important}
 .footer-container{grid-template-columns:minmax(220px,1.3fr) repeat(3,minmax(130px,1fr))!important;gap:20px!important}
 .footer-brand{padding:16px!important;border-radius:14px!important}
@@ -93,8 +92,7 @@ header.site-header{display:flex!important;justify-content:space-between!importan
 @media(max-width:950px){.footer-container{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:650px){.site-footer{margin-top:28px!important;padding:25px 15px 14px!important}.footer-container{grid-template-columns:1fr!important;gap:8px!important}.footer-brand{padding:14px!important}.footer-column{padding:7px 4px!important}.footer-column h4{margin-bottom:8px!important}.footer-column a{margin-bottom:5px!important}}
 
-/* Responsive polish: centered identity, compact controls, refined cards */
-header.site-header{justify-content:center!important;flex-wrap:wrap!important;row-gap:7px!important;padding:10px clamp(12px,2.4vw,28px)!important}
+
 button,.btn,.btn-main,.btn-outline,.form button,.footer-cta,.hero a,.section a.button,.card a,.project-info a,.group-card a{font-size: 13px!important;line-height:1.65!important;padding:8px 14px!important;border-radius:9px!important;min-height:0!important;min-width:0!important;max-width:100%;box-shadow:0 4px 12px rgba(4,30,27,.16),inset 0 1px 0 rgba(255,255,255,.12)!important}
 button:hover,.btn:hover,.btn-main:hover,.btn-outline:hover,.form button:hover,.footer-cta:hover,.card a:hover,.project-info a:hover,.group-card a:hover{transform:translateY(-2px);filter:brightness(1.06)}
 .section,.card,.feature,.group-card,.why-card,.counter,.project-info,.project-box,.box,.info-box,.contact-card,.form-card,.contact-detail{position:relative;overflow:hidden}
