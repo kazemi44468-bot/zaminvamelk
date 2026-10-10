@@ -841,6 +841,48 @@ padding:28px;
 
 }
 
+
+/* Curated fictional project portfolio */
+.project-showcase>p{max-width:1000px}
+.project-showcase>p strong{color:#f4d98a}
+.project-featured{padding:0!important;overflow:hidden;display:grid;grid-template-columns:minmax(230px,.78fr) minmax(0,1.5fr);gap:0!important}
+.project-cover{position:relative;min-height:100%;display:flex;flex-direction:column;justify-content:space-between;padding:26px;overflow:hidden;background:#17433d}
+.project-cover:before,.project-card-art:before{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(135deg,transparent 0 24px,rgba(244,220,157,.11) 25px,transparent 26px 49px),radial-gradient(ellipse at 25% 20%,rgba(231,199,112,.28),transparent 55%)}
+.project-cover:after{content:"";position:absolute;inset:16px;border:1px solid rgba(244,220,157,.36);border-radius:16px;pointer-events:none}
+.cover-residential{background:linear-gradient(145deg,#245b50,#0b2929 72%,#153f39)}
+.project-kicker{position:relative;z-index:1;color:#f5dfa0;font-size:12px;line-height:1.9}
+.project-symbol{position:relative;z-index:1;align-self:center;margin:auto;font-size:108px;line-height:1;color:rgba(248,226,166,.86);text-shadow:0 10px 32px rgba(0,0,0,.2)}
+.project-body{padding:clamp(22px,3vw,36px)}
+.project-title-row{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.project-title-row h3{margin:0 0 7px;font-size:clamp(21px,2vw,27px)!important}
+.project-location{margin:0!important;color:#bcd5ce!important;font-size:13px!important}
+.demo-status{display:inline-flex;align-items:center;padding:5px 10px;border:1px solid rgba(244,220,157,.5);border-radius:999px;color:#f5dfa0;background:rgba(244,220,157,.08);font-size:11px;white-space:nowrap}
+.project-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.project-tags span{padding:6px 10px;border-radius:8px;background:rgba(90,166,145,.13);border:1px solid rgba(137,203,181,.18);color:#cde8df;font-size:11px}
+.project-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;align-items:stretch}
+.project-card{min-width:0;overflow:hidden;border:1px solid rgba(212,175,55,.18);border-radius:20px;background:linear-gradient(160deg,rgba(24,67,61,.65),rgba(255,255,255,.025));transition:transform .3s,border-color .3s,box-shadow .3s}
+.project-card:hover{transform:translateY(-5px);border-color:rgba(240,212,106,.65);box-shadow:0 15px 35px rgba(0,0,0,.18)}
+.project-card-art{height:130px;position:relative;display:flex;justify-content:space-between;align-items:flex-start;padding:18px 20px;overflow:hidden;color:#f5dfa0;background:linear-gradient(135deg,#275a4e,#102f30)}
+.project-card-art>span:first-child{position:relative;z-index:1;font-size:12px;letter-spacing:.12em}
+.project-card-art .art-icon{position:relative;z-index:1;font-size:48px;line-height:1;color:rgba(246,223,160,.8)}
+.art-land{background:linear-gradient(135deg,#4a674b,#193d37)}
+.art-renewal{background:linear-gradient(135deg,#65513c,#273c37)}
+.art-digital{background:linear-gradient(135deg,#275b68,#172e40)}
+.art-investment{background:linear-gradient(135deg,#4d5a43,#213c35)}
+.project-card-body{padding:22px}
+.project-card-meta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:#c7dcd5;font-size:11px}
+.project-card-meta span:first-child{color:#f3d98f}
+.project-card-body h3{margin:13px 0 9px!important;font-size:19px!important;line-height:1.9}
+.project-card-body>p{font-size:14px!important;line-height:2.1!important}
+.project-card-body ul{padding-right:20px;margin:14px 0;color:#d3e2dc;font-size:13px;line-height:2.1}
+.project-card-foot{display:flex;flex-direction:column;gap:4px;margin-top:17px;padding-top:13px;border-top:1px solid rgba(212,175,55,.17);font-size:11px;color:#b9d4cc}
+.project-card-foot strong{font-size:13px;color:#f0d46a;font-weight:600}
+.project-disclaimer{margin-top:24px;padding:20px 22px;border:1px solid rgba(244,220,157,.24);border-right:3px solid #d4af37;border-radius:14px;background:rgba(212,175,55,.055)}
+.project-disclaimer strong{color:#f4d98a}
+.project-disclaimer p{margin:7px 0 0!important;font-size:13px!important;line-height:2.1!important}
+@media(max-width:760px){.project-featured{grid-template-columns:1fr}.project-cover{min-height:165px}.project-symbol{font-size:76px}.project-gallery{grid-template-columns:1fr!important}.project-card-art{height:110px}.project-body{padding:22px}}
+@media(prefers-reduced-motion:reduce){.project-card{transition:none}}
+
 </style>
 
 
@@ -995,204 +1037,42 @@ Strategic Development Projects
 
 
 
-<section class="section">
-
-
-<h2>
-
-پروژه شاخص
-
-</h2>
-
-
-
-<div class="project">
-
-
-<h3>
-
-پروژه توسعه مسکن آفتاب رامسر
-
-</h3>
-
-
-<p>
-
-پروژه توسعه مجتمع مسکونی آفتاب رامسر
-یکی از پروژه‌های حوزه توسعه املاک و سرمایه‌گذاری
-هلدینگ است که با هدف ایجاد ارزش پایدار در بخش
-مسکن و دارایی‌های ملکی تعریف شده است.
-
-</p>
-
-
-
-
+<section class="section project-showcase" id="featured-projects">
+<h2>نمونه پروژه‌های شاخص</h2>
+<p>در این بخش، چند نمونه مفهومی برای نمایش شیوه معرفی، ارزیابی و ارائه پروژه‌ها آمده است. <strong>نام‌ها، موقعیت‌ها، ظرفیت‌ها و اعداد این نمونه‌ها فرضی‌اند و به پروژه واقعی، قرارداد منعقدشده یا تعهد سرمایه‌گذاری اشاره ندارند.</strong> در نسخه عملیاتی، هر پرونده فقط پس از احراز اطلاعات و تأیید انتشار با وضعیت مستند خود معرفی می‌شود.</p>
+<div class="project project-featured">
+<div class="project-cover cover-residential"><span class="project-kicker">نمونه مفهومی ۰۱ · توسعه شهری</span><span class="project-symbol" aria-hidden="true">⌂</span></div>
+<div class="project-body">
+<div class="project-title-row"><div><h3>پردیس زندگی سبز</h3><p class="project-location">سناریوی فرضی · توسعه ترکیبی مسکونی و خدمات محله‌ای</p></div><span class="demo-status">نمونه نمایشی</span></div>
+<p>الگوی پیشنهادی برای تبدیل یک پهنه فرضیِ قابل توسعه به محیطی یکپارچه برای سکونت، خدمات روزمره و فضای باز عمومی؛ با اجرای مرحله‌ای و توجه به تناسب میان ظرفیت ساخت، دسترسی و نیازهای محله.</p>
 <div class="project-info">
-
-
-<div class="project-item">
-
-<h4>
-نوع پروژه
-</h4>
-
-<p>
-توسعه مجتمع مسکونی
-</p>
-
+<div class="project-item"><h4>نوع طرح</h4><p>توسعه ترکیبی و محله‌محور</p></div>
+<div class="project-item"><h4>مقیاس فرضی</h4><p>حدود ۱۸ هکتار</p></div>
+<div class="project-item"><h4>مدل توسعه</h4><p>مرحله‌بندی و مشارکت تخصصی</p></div>
+<div class="project-item"><h4>تمرکز ارزش‌آفرینی</h4><p>کاربری متوازن، فضای عمومی و مدیریت دارایی</p></div>
 </div>
-
-
-
-<div class="project-item">
-
-<h4>
-ظرفیت
-</h4>
-
-<p>
-۱۶۰ واحد مسکونی
-</p>
-
+<div class="project-tags"><span>مطالعات مکانی</span><span>امکان‌سنجی</span><span>طراحی مدل مشارکت</span><span>مدیریت چرخه عمر</span></div>
 </div>
-
-
-
-<div class="project-item">
-
-<h4>
-ساختار
-</h4>
-
-<p>
-۵ طبقه و توسعه چندمرحله‌ای
-</p>
-
 </div>
-
-
-
-<div class="project-item">
-
-<h4>
-حوزه فعالیت
-</h4>
-
-<p>
-زمین، املاک و سرمایه‌گذاری
-</p>
-
+<div class="grid project-gallery">
+<article class="project-card">
+<div class="project-card-art art-land"><span>۰۲</span><span class="art-icon" aria-hidden="true">⌖</span></div>
+<div class="project-card-body"><div class="project-card-meta"><span>نمونه مفهومی</span><span>زمین و دارایی</span></div><h3>طرح یکپارچه‌سازی اراضی سپهر</h3><p>سناریوی فرضی برای بررسی چند قطعه زمین، تحلیل وضعیت ثبتی و دسترسی، سنجش ظرفیت کاربری و تدوین گزینه‌های تجمیع یا توسعه مرحله‌ای.</p><ul><li>تهیه پرونده و نقشه پایه</li><li>تحلیل محدودیت‌ها و زیرساخت</li><li>مقایسه سناریوهای توسعه</li></ul><div class="project-card-foot"><span>خروجی نمونه</span><strong>گزارش ارزیابی و نقشه فرصت</strong></div></div>
+</article>
+<article class="project-card">
+<div class="project-card-art art-renewal"><span>۰۳</span><span class="art-icon" aria-hidden="true">◇</span></div>
+<div class="project-card-body"><div class="project-card-meta"><span>نمونه مفهومی</span><span>بازآفرینی</span></div><h3>بازآفرینی بافت نارون</h3><p>تصویر مفهومی از بهسازی تدریجی یک بافت فرضی با اولویت ارتقای کیفیت محیط، بهبود دسترسی و هماهنگی میان منافع مالکان و نیازهای محلی.</p><ul><li>شناخت اجتماعی و کالبدی</li><li>بررسی گزینه‌های مداخله</li><li>چارچوب مشارکت ذی‌نفعان</li></ul><div class="project-card-foot"><span>خروجی نمونه</span><strong>چارچوب توسعه و اجرا</strong></div></div>
+</article>
+<article class="project-card">
+<div class="project-card-art art-digital"><span>۰۴</span><span class="art-icon" aria-hidden="true">▦</span></div>
+<div class="project-card-body"><div class="project-card-meta"><span>نمونه مفهومی</span><span>فناوری مکانی</span></div><h3>سامانه دیدبان دارایی</h3><p>طرح مفهومی یک ابزار دیجیتال برای سامان‌دهی پرونده‌های دارایی، ثبت منبع اطلاعات، نمایش لایه‌های مکانی و پیگیری وضعیت ارزیابی پروژه‌ها.</p><ul><li>شناسه یکتا و پرونده دیجیتال</li><li>نقشه و لایه‌های اطلاعاتی</li><li>گزارش وضعیت و تصمیم‌ها</li></ul><div class="project-card-foot"><span>خروجی نمونه</span><strong>الگوی داده و داشبورد</strong></div></div>
+</article>
+<article class="project-card">
+<div class="project-card-art art-investment"><span>۰۵</span><span class="art-icon" aria-hidden="true">↗</span></div>
+<div class="project-card-body"><div class="project-card-meta"><span>نمونه مفهومی</span><span>سرمایه‌گذاری</span></div><h3>سبد فرصت‌های آریا</h3><p>سناریوی فرضی برای دسته‌بندی فرصت‌های ملکی بر اساس مرحله بلوغ، سطح ریسک، نیاز مالی و مدارک موجود؛ بدون فرضِ تصویب یا جذب سرمایه.</p><ul><li>امتیازدهی و غربالگری اولیه</li><li>تحلیل سناریوهای مالی</li><li>تعریف شروط ورود به مرحله بعد</li></ul><div class="project-card-foot"><span>خروجی نمونه</span><strong>ماتریس اولویت‌بندی فرصت‌ها</strong></div></div>
+</article>
 </div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="section">
-
-
-<h2>
-
-حوزه‌های توسعه پروژه‌های آینده
-
-</h2>
-
-
-<div class="grid">
-
-
-<div class="card">
-
-<h3>
-
-توسعه زمین و املاک
-
-</h3>
-
-<p>
-
-پروژه‌های مسکونی، تجاری،
-اداری، شهرک‌سازی و مدیریت دارایی.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-
-زیرساخت و عمران
-
-</h3>
-
-<p>
-
-پروژه‌های عمرانی،
-شهری و زیرساخت‌های توسعه‌ای.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-
-معدن و صنایع معدنی
-
-</h3>
-
-<p>
-
-توسعه فرصت‌های معدنی،
-فرآوری و سرمایه‌گذاری صنعتی.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-
-فناوری و هوشمندسازی
-
-</h3>
-
-<p>
-
-سامانه‌های هوشمند،
-داده‌محوری و تحول دیجیتال.
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
+<div class="project-disclaimer"><strong>یادآوری درباره وضعیت پروژه‌ها</strong><p>این موارد صرفاً نمونه‌های طراحی‌شده برای نمایش توانمندی محتوایی سایت هستند؛ هیچ‌یک نباید به‌عنوان پروژه جاری، دارایی تحت مدیریت، فرصت تأییدشده یا سابقه اجرایی شرکت برداشت شود.</p></div>
 </section>
 
 <section class="section">
