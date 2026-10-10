@@ -886,9 +886,10 @@ padding:28px;
 
 /* Brand imagery */
 .project-cover,.project-card-art{position:relative;overflow:hidden;isolation:isolate}
-.project-cover img,.project-card-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform .6s ease}
+.project-cover img,.project-card-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;transition:transform .6s ease}.project-cover>span,.project-card-art>span{position:relative;z-index:2}
 .project-featured:hover .project-cover img,.project-card:hover .project-card-art img{transform:scale(1.045)}
 .project-cover:after,.project-card-art:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(135deg,rgba(5,35,30,.24),rgba(5,35,30,.04) 60%,rgba(5,35,30,.42));pointer-events:none}
+.hero{background-image:linear-gradient(90deg,rgba(7,19,32,.96),rgba(7,19,32,.68) 55%,rgba(7,19,32,.08)),url("assets/images/hero-landscape.svg");background-size:cover;background-position:center;border-radius:0 0 28px 28px}
 footer{background-image:linear-gradient(180deg,rgba(7,19,32,.9),rgba(4,11,20,.96)),url("assets/images/footer-ornament.svg");background-size:cover;background-position:center}
 </style>
 
